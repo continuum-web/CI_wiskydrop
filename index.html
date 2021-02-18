@@ -4,20 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisky Drop | Taste a new Wisky Every Month</title>
+    <title>Whiskey Drop | Taste a new Whiskey Every Month</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <article class="container">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a href="#" class="navbar-brand">Whiskey Drop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign in / Sign up</a></li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2">Great whiskey delivered to your door</p>
+            <a href="/login">Sign in / Sign up</a>
+        </div>
+    </nav>
+    <article class="container mt-3">
         <!-- callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
-                    <h1>The finest Wiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best wiskeys every month. <s>£19.99</s>
+                <section class="callout jumbotron text-center">
+                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+                        <s class="d-none d-sm-inline">£19.99</s>
+                        <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free</mark></strong></p>
                     <button class="btn btn-success btn-lg">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service, Please drink
@@ -31,7 +44,7 @@
         <!-- QUOTES -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes:</h2>
                 </div>
                 <div class="row">
@@ -54,7 +67,7 @@
         <!-- Features -->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
@@ -99,10 +112,10 @@
         </section>
 
         <!-- Monthly Favorites challenge -->
-        <div class="col-12">
+        <div class="col-12 my-5">
             <section>
 
-                <h3>Here is our monthy picks</h3>
+                <h3 class="my-5">Here is our monthy picks</h3>
                 <table class="table table-sm table-hover table-bordered">
                     <thead class="thead-dark ">
                         <tr>
