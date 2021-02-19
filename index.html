@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -49,35 +50,40 @@
             <a href="/login">Sign in / Sign up</a>
         </div>
     </nav>
-    <article class="container mt-3">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get 12 months subscription for the price of 6!
-                    <a href="#">see here for details</a>
-                </div>
+
+    <!-- <div class="row d-none d-sm-block">
+        <div class="col-12">
+            <div class="alert alert-container">
+                <strong>Sale Now On!</strong> We've got a sale on. Get 12 months subscription for the price of 6!
+                <a href="#">see here for details</a>
             </div>
         </div>
-        <!-- callout -->
+    </div> -->
+    <!-- callout -->
+    <div class="container-fluid callout-container">
+        <!-- Callout -->
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                        <s class="d-none d-sm-inline">£19.99</s>
+                        <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
-                        <strong><mark> First one is free</mark></strong></p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModel">Sign
-                        Up!</button>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service, Please drink
-                            responsibly</small>
-                    </p>
+                        <strong><mark>First one is free!</mark></strong></p>
+                    <p><button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign
+                            Up!</button></p>
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink
+                            responsibly.</small></p>
                 </section>
             </div>
         </div>
+    </div>
 
-        <hr>
-        <!-- QUOTES -->
+
+    <!-- QUOTES -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
@@ -112,8 +118,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
         </section>
-        <!-- Features -->
+    </div>
+    <!-- Features -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -160,8 +170,10 @@
                 </div>
             </div>
         </section>
+    </div>
 
-        <!-- Monthly Favorites challenge -->
+    <!-- Monthly Favorites challenge -->
+    <div class="container faves-container">
         <div class="col-12 my-5">
             <section>
 
@@ -209,7 +221,8 @@
 
             </section>
         </div>
-    </article>
+    </div>
+
     <div class="modal" tabindex="-1" role="dialog" id="signUpModel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
